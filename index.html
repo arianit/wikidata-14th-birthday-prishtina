@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Wikidata for Beginners</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <style>
+    :root { --wd-red: #990000; --wd-green: #339966; --wd-blue: #006699; }
+    .reveal { font-size: 34px; }
+    .reveal h1, .reveal h2, .reveal h3 { text-transform: none; color: #202122; }
+    .reveal a { color: var(--wd-blue); }
+    .reveal ul { display: block; }
+    .reveal li { margin: .3em 0; }
+    .bar { display: flex; height: 10px; width: 160px; margin: 0 auto 1em; }
+    .bar span { flex: 1; }
+    .bar .r { background: var(--wd-red); } .bar .g { background: var(--wd-green); } .bar .b { background: var(--wd-blue); }
+    .cols { display: grid; grid-template-columns: 1.15fr 1fr; gap: 1.2em; align-items: center; text-align: left; }
+    .shot { width: 100%; border: 1px solid #a2a9b1; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+    .stats { display: grid; gap: .5em; }
+    .stat { border-left: 6px solid var(--wd-blue); padding: .1em .6em; }
+    .stat b { display: block; font-size: 1.5em; line-height: 1.1; }
+    .stat small { color: #54595d; font-size: .6em; }
+    .small { font-size: .65em; color: #54595d; }
+    .cta { display: inline-block; margin-top: .6em; padding: .4em 1em; background: var(--wd-blue); color: #fff !important; border-radius: 6px; text-decoration: none; }
+    .links { text-align: left; display: inline-block; }
+  </style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+  <!-- 1 -->
+  <section>
+    <div class="bar"><span class="r"></span><span class="g"></span><span class="b"></span></div>
+    <h2>Wikimedians of Albanian Language User Group</h2>
+    <p>Volunteers who write, improve and connect free knowledge<br>in and about the Albanian language.</p>
+    <ul class="links small">
+      <li>Wikipedia in Albanian, Commons, Wikidata, Wikisource, Wiktionary&hellip;</li>
+      <li>Edit-a-thons, trainings, photo campaigns, community events</li>
+      <li>Open to everyone &mdash; beginners welcome</li>
+    </ul>
+    <p class="small">Intro to Wikidata for beginners &middot; ~10 min</p>
+    <aside class="notes">
+      ~1.5 min. Introduce the user group: who we are, what we do, how to join.
+      Add the meta page link / contact details of the group here.
+    </aside>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2>About Wikidata</h2>
+    <div class="cols">
+      <div>
+        <img class="shot" src="img/item.png" alt="Wikidata item Q222 (Albania), shown in Albanian">
+        <div class="small">Item <a href="https://www.wikidata.org/wiki/Q222">Q222</a> &mdash; Albania</div>
+      </div>
+      <div>
+        <ul style="font-size:.8em">
+          <li><b>Item</b> (Q) = a thing or idea</li>
+          <li><b>Property</b> (P) = how it is described</li>
+          <li><b>Statement</b> = item + property + value (+ reference)</li>
+        </ul>
+        <div class="stats">
+          <div class="stat"><b>~123.8 million</b><small>items</small></div>
+          <div class="stat"><b>~2.56 billion</b><small>edits</small></div>
+          <div class="stat"><b>~48,500</b><small>active editors</small></div>
+        </div>
+        <div class="small">Source: Wikidata API, 28 Oct 2026</div>
+      </div>
+    </div>
+    <aside class="notes">
+      ~4 min. Walk through the screenshot: label, description, aliases, then statements.
+      Free, multilingual, structured data that anyone can edit (CC0).
+      It feeds Wikipedia infoboxes, links between language versions, Commons, and search/voice assistants.
+      Same item, every language: Shqipëria / Albania / Albanien.
+    </aside>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2>Technical work on Wikipedia</h2>
+    <ul>
+      <li>Bots and tools that keep articles, categories and data in sync</li>
+      <li>Wikidata-powered infoboxes and lists on Albanian Wikipedia</li>
+      <li>Templates, modules and gadgets for local editors</li>
+    </ul>
+    <div style="margin-top:1em; padding:.6em 1em; border:2px solid var(--wd-blue); border-radius:8px;">
+      <h3 style="margin:0">News: Wikimedia Hackathon 2027 &mdash; Tirana</h3>
+      <p class="small" style="margin:.3em 0 0">A global gathering of Wikimedia developers and volunteers, coming to Albania.<br>
+      Dates and registration: <a href="https://www.mediawiki.org/wiki/Wikimedia_Hackathon_2027">mediawiki.org/wiki/Wikimedia_Hackathon_2027</a></p>
+    </div>
+    <aside class="notes">
+      ~2.5 min. Give examples of local technical work. Announce the Hackathon in Tirana.
+      Check the page above for confirmed dates and venue before presenting, and add them here.
+    </aside>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2>Hands-on</h2>
+    <p>Let's make our first edits together.</p>
+    <p><a class="cta" href="https://www.wikidata.org/wiki/Special:CreateAccount">Create your account</a></p>
+    <ul class="links" style="font-size:.8em">
+      <li>Open an item: <a href="https://www.wikidata.org/wiki/Q222">wikidata.org/wiki/Q222</a></li>
+      <li>Add a label or statement in Albanian</li>
+      <li>Explore data: <a href="https://query.wikidata.org">query.wikidata.org</a></li>
+    </ul>
+    <aside class="notes">~2 min, then continue live. Participants log in, find an item with a missing Albanian label, and fill it in.</aside>
+  </section>
+
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>Reveal.initialize({ hash: true, slideNumber: true, plugins: [RevealNotes] });</script>
+</body>
+</html>
