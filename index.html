@@ -23,6 +23,7 @@
     .stat { border-left: 6px solid var(--wd-blue); padding: .1em .6em; }
     .stat b { display: block; font-size: 1.5em; line-height: 1.1; }
     .stat small { color: #54595d; font-size: .6em; }
+    .shot.app { max-height: 58vh; width: auto; max-width: 100%; margin: .3em 0; }
     .small { font-size: .65em; color: #54595d; }
     .cta { display: inline-block; margin-top: .6em; padding: .4em 1em; background: var(--wd-blue); color: #fff !important; border-radius: 6px; text-decoration: none; }
     .links { text-align: left; display: inline-block; }
@@ -107,17 +108,22 @@
       <aside class="notes">~1 min. These are applications you already use without knowing it.</aside>
     </section>
     <section>
-      <h2>Best Wikidata applications</h2>
-      <h3 style="font-size:.8em">Tools anyone can use</h3>
-      <ul style="font-size:.8em">
-        <li><a href="https://query.wikidata.org">Query Service</a> &mdash; ask questions in SPARQL; draw maps, charts, timelines</li>
-        <li><a href="https://reasonator.toolforge.org">Reasonator</a> &mdash; human-friendly view of any item</li>
-        <li><a href="https://scholia.toolforge.org">Scholia</a> &mdash; scholarly profiles, topics and citations</li>
-        <li><a href="https://mix-n-match.toolforge.org">Mix'n'match</a> &mdash; link external catalogues to Wikidata</li>
-        <li><a href="https://www.entitree.com">EntiTree</a> &middot; <a href="https://histropedia.com">Histropedia</a> &mdash; family trees and timelines</li>
-      </ul>
-      <p class="small">Beyond Wikimedia: search engines, voice assistants and libraries reuse Wikidata as open linked data.</p>
-      <aside class="notes">~1.5 min. Show one live: run an example query in the Query Service (e.g. a map of places in Kosovo). Check each link still works before presenting.</aside>
+      <h2 style="font-size:1.1em">Query Service <span class="small">&mdash; ask questions, get maps and charts</span></h2>
+      <img class="shot app" src="img/app-query.png" alt="Wikidata Query Service map of places in Kosovo">
+      <p class="small"><a href="https://query.wikidata.org">query.wikidata.org</a> &middot; every red dot is a Wikidata item located in Kosovo</p>
+      <aside class="notes">~40 s. A single SPARQL query: items located in Kosovo with coordinates, shown as a map.</aside>
+    </section>
+    <section>
+      <h2 style="font-size:1.1em">Reasonator <span class="small">&mdash; a friendly view of any item</span></h2>
+      <img class="shot app" src="img/app-reasonator.png" alt="Reasonator page for Kosovo (Q1246)">
+      <p class="small"><a href="https://reasonator.toolforge.org">reasonator.toolforge.org</a> &middot; same data as the item page, with maps, images and flags</p>
+      <aside class="notes">~40 s. Same item Q1246 as before, presented for readers rather than editors.</aside>
+    </section>
+    <section>
+      <h2 style="font-size:1.1em">Mix'n'match <span class="small">&mdash; link catalogues to Wikidata</span></h2>
+      <img class="shot app" src="img/app-mixnmatch.png" alt="Mix'n'match catalogue list">
+      <p class="small"><a href="https://mix-n-match.toolforge.org">mix-n-match.toolforge.org</a> &middot; a good first task for beginners: match entries to items</p>
+      <aside class="notes">~40 s. Volunteers match catalogue entries (museums, archives, databases) to Wikidata items, one click at a time.</aside>
     </section>
   </section>
 
