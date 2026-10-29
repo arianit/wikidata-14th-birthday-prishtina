@@ -28,10 +28,13 @@
     .logo.wd { height: 110px; }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6em; margin-top: .6em; }
     .grid .stat { text-align: left; }
-    .birthday { display: flex; align-items: center; justify-content: center; gap: 1.2em; margin-top: .5em; }
-    .birthday img.cake { height: 38vh; width: auto; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
-    .birthday img.b14 { height: 22vh; width: auto; }
-    .birthday .txt { text-align: left; font-size: .7em; }
+    .hero { grid-template-columns: 1.4fr 1fr; }
+    .hero .logo { margin: 0 0 .4em; height: 120px; }
+    .hero p, .hero ul { margin: .3em 0; }
+    .birthday { text-align: center; }
+    .birthday img.cake { height: 46vh; width: auto; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+    .birthday .txt { font-size: .6em; margin-top: .3em; }
+    .birthday img.b14 { height: 1.6em; width: auto; vertical-align: middle; }
     .small { font-size: .65em; color: #54595d; }
     .cta { display: inline-block; margin-top: .6em; padding: .4em 1em; background: var(--wd-blue); color: #fff !important; border-radius: 6px; text-decoration: none; }
     .links { text-align: left; display: inline-block; }
@@ -42,18 +45,22 @@
 
   <!-- 1 -->
   <section>
-    <img class="logo" src="img/woalug.svg" alt="Wikimedians of Albanian Language User Group">
-    <p>Vullnetarë që shkruajnë, përmirësojnë dhe lidhin dijen e lirë<br>në gjuhën shqipe dhe për të.</p>
-    <ul class="links small">
+    <div class="cols hero">
+      <div>
+        <img class="logo" src="img/woalug.svg" alt="Wikimedians of Albanian Language User Group">
+        <p>Vullnetarë që shkruajnë, përmirësojnë dhe lidhin dijen e lirë<br>në gjuhën shqipe dhe për të.</p>
+        <ul class="links small">
       <li>Wikipedia në disa gjuhë, Commons, Wikidata, Wikivoyage</li>
       <li>Edit-a-thon-e, trajnime, fushata fotografike, ngjarje komunitare</li>
       <li>E hapur për të gjithë &mdash; mirëpriten fillestarët</li>
     </ul>
-    <div class="birthday">
-      <img class="cake" src="img/wikidata-14-cake.jpg" alt="Torta për ditëlindjen e 14-të të Wikidata">
-      <div class="txt"><img class="b14" src="img/wikidata-14-logo.png" alt="Wikidata 14"><br><b>Wikidata mbush 14 vjeç!</b><br>29.10.2012 &rarr; 29.10.2026</div>
+        <p class="small">Hyrje në Wikidata për fillestarë &middot; ~10 min</p>
+      </div>
+      <div class="birthday">
+        <img class="cake" src="img/wikidata-14-cake.jpg" alt="Torta për ditëlindjen e 14-të të Wikidata">
+        <div class="txt"><img class="b14" src="img/wikidata-14-logo.png" alt="Wikidata 14"> <b>Wikidata mbush 14 vjeç!</b><br>29.10.2012 &rarr; 29.10.2026</div>
+      </div>
     </div>
-    <p class="small">Hyrje në Wikidata për fillestarë &middot; ~10 min</p>
     <aside class="notes">
       ~1,5 min. Prezantoni grupin: kush jemi, çfarë bëjmë, si t'i bashkohen. Shtoni këtu lidhjen e faqes në Meta / kontaktet e grupit.
     </aside>
