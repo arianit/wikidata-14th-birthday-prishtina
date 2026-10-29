@@ -28,6 +28,10 @@
     .logo.wd { height: 110px; }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6em; margin-top: .6em; }
     .grid .stat { text-align: left; }
+    .birthday { display: flex; align-items: center; justify-content: center; gap: 1.2em; margin-top: .5em; }
+    .birthday img.cake { height: 38vh; width: auto; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+    .birthday img.b14 { height: 22vh; width: auto; }
+    .birthday .txt { text-align: left; font-size: .7em; }
     .small { font-size: .65em; color: #54595d; }
     .cta { display: inline-block; margin-top: .6em; padding: .4em 1em; background: var(--wd-blue); color: #fff !important; border-radius: 6px; text-decoration: none; }
     .links { text-align: left; display: inline-block; }
@@ -45,6 +49,10 @@
       <li>Edit-a-thons, trainings, photo campaigns, community events</li>
       <li>Open to everyone &mdash; beginners welcome</li>
     </ul>
+    <div class="birthday">
+      <img class="cake" src="img/wikidata-14-cake.jpg" alt="Wikidata's 14th birthday cake">
+      <div class="txt"><img class="b14" src="img/wikidata-14-logo.png" alt="Wikidata 14"><br><b>Wikidata turns 14!</b><br>29 Oct 2012 &rarr; 29 Oct 2026</div>
+    </div>
     <p class="small">Intro to Wikidata for beginners &middot; ~10 min</p>
     <aside class="notes">
       ~1.5 min. Introduce the user group: who we are, what we do, how to join.
@@ -134,10 +142,10 @@
     <aside class="notes">~40 s. Same item Q1246 as before, presented for readers rather than editors.</aside>
   </section>
   <section>
-    <h2 style="font-size:1.1em">Mix'n'match <span class="small">&mdash; link catalogues to Wikidata</span></h2>
-    <img class="shot app" src="img/app-mixnmatch.png" alt="Mix'n'match catalogue list">
-    <p class="small"><a href="https://mix-n-match.toolforge.org">mix-n-match.toolforge.org</a> &middot; a good first task for beginners: match entries to items</p>
-    <aside class="notes">~40 s. Volunteers match catalogue entries (museums, archives, databases) to Wikidata items, one click at a time.</aside>
+    <h2 style="font-size:1.1em">Histropedia <span class="small">&mdash; timelines built from Wikidata</span></h2>
+    <img class="shot app" src="img/app-histropedia.png" alt="Histropedia home page">
+    <p class="small"><a href="https://www.histropedia.com">histropedia.com</a> &middot; explore history as an interactive timeline</p>
+    <aside class="notes">~40 s. Histropedia builds timelines from dates and events in Wikidata. Open a live example before presenting.</aside>
   </section>
 
   <!-- 3 -->
