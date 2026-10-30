@@ -20,6 +20,7 @@
     .cols { display: grid; grid-template-columns: 1.15fr 1fr; gap: 1.2em; align-items: center; text-align: left; }
     .shot { width: 100%; border: 1px solid #a2a9b1; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
     .stats { display: grid; gap: .5em; }
+    .stats.two { grid-template-columns: 1fr 1fr; }
     .stat { border-left: 6px solid var(--wd-blue); padding: .1em .6em; }
     .stat b { display: block; font-size: 1.5em; line-height: 1.1; }
     .stat small { color: #54595d; font-size: .6em; }
@@ -95,12 +96,15 @@
           <li><b>Property</b> (P) = how it is described</li>
           <li><b>Statement</b> = item + property + value (+ reference)</li>
         </ul>
-        <div class="stats">
+        <div class="stats two">
           <div class="stat"><b>~123.8 million</b><small>items</small></div>
           <div class="stat"><b>~2.56 billion</b><small>edits</small></div>
           <div class="stat"><b>~48,500</b><small>active editors</small></div>
+          <div class="stat"><b>14,016</b><small>properties (P)</small></div>
+          <div class="stat"><b>~1.73 million</b><small>lexemes (dictionary)</small></div>
+          <div class="stat"><b>~9,400</b><small>items with country Kosovo (P17)</small></div>
         </div>
-        <div class="small">Source: Wikidata API, 28 Oct 2026</div>
+        <div class="small">Albanian Wikipedia: ~106,500 articles &middot; Source: Wikidata API and Query Service, 29 Oct 2026</div>
       </div>
     </div>
     <aside class="notes">
@@ -109,19 +113,6 @@
       It feeds Wikipedia infoboxes, links between language versions, Commons, and search/voice assistants.
       Same item, every language: Kosovë / Kosovo / Kosovo.
     </aside>
-  </section>
-  <section>
-    <h2>Wikidata in numbers</h2>
-    <div class="grid">
-      <div class="stat"><b>~123.8 million</b><small>items</small></div>
-      <div class="stat"><b>~2.56 billion</b><small>edits</small></div>
-      <div class="stat"><b>~48,500</b><small>active editors</small></div>
-      <div class="stat"><b>14,016</b><small>properties (P)</small></div>
-      <div class="stat"><b>~1.73 million</b><small>lexemes (dictionary)</small></div>
-      <div class="stat"><b>~9,400</b><small>items with country Kosovo (P17)</small></div>
-    </div>
-    <p class="small">Albanian Wikipedia: ~106,500 articles &middot; Source: Wikidata API and Query Service, 29 Oct 2026</p>
-    <aside class="notes">~1 min. Scale of the project: millions of items, thousands of properties. Lexemes are words for a future Wiktionary. Local example: thousands of items link to Kosovo.</aside>
   </section>
 
   <!-- 2b: applications -->
